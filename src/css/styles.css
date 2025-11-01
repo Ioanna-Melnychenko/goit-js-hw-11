@@ -85,4 +85,33 @@
       }
         .ishidden{display: none;}
 
-   
+
+.gallery{
+    width: 1128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0 auto;
+}
+.gallery-image {
+    width: 360px;
+    height: 200px;}
+
+.form {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  gap: 28px;
+  
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

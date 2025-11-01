@@ -5,7 +5,8 @@ import "izitoast/dist/css/iziToast.min.css";
 import {clearGallery, showLoader, hideLoader, createGallery} from "./js/render-functions";
 import {getImagesByQuery} from "./js/pixabay-api";
 
-const formEL=document.querySelector(".form");
+const formEL = document.querySelector(".form");
+
 formEL.addEventListener("submit", onSubmit);
  function onSubmit(ev){
     ev.preventDefault();
@@ -27,7 +28,6 @@ formEL.addEventListener("submit", onSubmit);
         formEL.reset();
     }}).catch(error=>{iziToast.error({message: error.message, position:"topRight"})}).finally(()=>{hideLoader()});
  };
-
 
 
 //

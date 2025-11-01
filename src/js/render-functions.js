@@ -19,9 +19,9 @@ function hideLoader(){
 function createGallery(images){
     const murkup=images.map(
         ({ previewURL, largeImageURL, tags, likes, views, comments, downloads }) => 
-            `<li class="gallery__item">
-                <a class="gallery__link" href="${largeImageURL}">
-                    <img class="gallery__image" src="${previewURL}" alt="${tags}" />
+            `<li class="gallery-item">
+                <a class="gallery-link" href="${largeImageURL}">
+                    <img class="gallery-image" src="${previewURL}" alt="${tags}" />
                     <div class="info">
                         <p><b>Likes:</b> ${likes}</p>
                         <p><b>Views:</b> ${views}</p>
